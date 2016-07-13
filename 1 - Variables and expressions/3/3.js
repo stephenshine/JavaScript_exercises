@@ -1,4 +1,8 @@
-var message = document.getElementById("in");
+var btn = document.getElementById("process");
+btn.addEventListener("click", func);
+var num = document.getElementById("input").value;
 
-document.getElementById("out").innerHTML = message;
-
+function func() {
+    var x = document.getElementById("out");
+    x.innerHTML = num;
+}
