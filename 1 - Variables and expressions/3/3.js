@@ -1,8 +1,7 @@
-var btn = document.getElementById("process");
-btn.addEventListener("click", func);
-var num = document.getElementById("input").value;
+var x = document.getElementById("result");
 
-function func() {
-    var x = document.getElementById("out");
-    x.innerHTML = num;
+function calc() {
+    var input1 = document.getElementById("input1");
+    input1 = parseInt(input1.value);
+    x.innerHTML = input1;
 }

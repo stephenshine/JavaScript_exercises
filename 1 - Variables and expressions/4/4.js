@@ -1,7 +1,10 @@
-var store = parseInt(prompt("Type in a number"));
-var store2 = parseInt(prompt("Type in another number"));
-var answer = store + store2;
+var x = document.getElementById("result");
 
-var x = document.getElementById("out");
-
-x.innerHTML = answer;
+function calc() {
+    var input1 = document.getElementById("input1");
+    var input2 = document.getElementById("input2");
+    input1 = parseInt(input1.value);
+    input2 = parseInt(input2.value);
+    var result = input1 + input2;
+    x.innerHTML = "The sum of the two numbers is " + result;
+}

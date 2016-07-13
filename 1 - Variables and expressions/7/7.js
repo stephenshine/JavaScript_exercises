@@ -1,9 +1,19 @@
-var store = parseInt(prompt("Type in a number"));
-var less = store - 1;
-var more = store + 1;
+// get the paragraph to elements to print the results
+var x = document.getElementById("result1");
+var y = document.getElementById("result2");
 
-var x = document.getElementById("out");
-var y = document.getElementById("out2");
-
-x.innerHTML = "One more than your number is " + more;
-y.innerHTML = "One less than you number is " + less;
+function calc() {
+    // store the input values from the user
+    var input1 = document.getElementById("input1");
+    
+    // prase the input to compare the numbers
+    input1 = parseInt(input1.value);
+    
+    // store changes to the input in two variables
+    var plus1 = input1 + 1;
+    var minus1 = input1 - 1;
+    
+    // print variables inside elements
+    x.innerHTML = ("The number plus 1 is " + plus1);
+    y.innerHTML = ("The number minus 1 is " + minus1);
+}

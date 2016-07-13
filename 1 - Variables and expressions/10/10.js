@@ -10,10 +10,15 @@ function calc() {
     input1 = parseInt(input1.value);
     input2 = parseInt(input2.value);
     
-    // compare the two inputs
-    if (input1 === input2) {
-        x.innerHTML = "The two numbers are the same";
-    } else {
-        x.innerHTML = "The two numbers are different";
+    // check if both inputs are greater than 10
+    if (input1 > 10 && input2 > 10) {
+        x.innerHTML = "Both numbers are greater than 10";
+    } 
+    // check if one of the numbers is greater than 10
+    else if(input1 > 10 || input2 > 10) {
+        x.innerHTML = "One of the numbers is greater than 10";
+    }
+    else {
+        x.innerHTML = "Neither of the numbers is greater than 10";
     }
 }
