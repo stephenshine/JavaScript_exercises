@@ -1,4 +1,5 @@
 var x = document.getElementById("result");
+document.getElementById("process").addEventListener("click", calc);
 
 function calc() {
     var input1 = document.getElementById("input1");

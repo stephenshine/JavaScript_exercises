@@ -1,5 +1,10 @@
+// JavaScript file to display largest of two inputs
+
 // get the paragraph to element to print the result
 var x = document.getElementById("result");
+
+// set event listener for button click
+document.getElementById("process").addEventListener("click", calc);
 
 function calc() {
     // store the input values from the user
