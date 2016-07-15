@@ -2,6 +2,9 @@
 var x = document.getElementById("result1");
 var y = document.getElementById("result2");
 
+// add event listener to listen for button click
+document.getElementById("process").addEventListener("click", calc);
+
 function calc() {
     // store the input values from the user
     var input1 = document.getElementById("input1");

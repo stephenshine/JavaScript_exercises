@@ -1,6 +1,9 @@
 // get the paragraph to element to print the result
 var x = document.getElementById("result");
 
+// add event listener to listen for button click
+document.getElementById("process").addEventListener("click", calc);
+
 function calc() {
     // store the input values from the user
     var a = document.getElementById("input1");
@@ -21,5 +24,4 @@ function calc() {
     x.innerHTML = "(a + b) * c = " + sum1 +
                "<br> a + b + c = " + sum2 +
                "<br> the difference is " + difference;
-
 }
